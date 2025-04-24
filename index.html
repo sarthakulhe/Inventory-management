@@ -43,7 +43,9 @@
     <div class="col-md-6 d-flex">
       <input id="code" class="form-control me-2" placeholder="Product Code">
       <!-- Barcode scanner button -->
-      <button class="btn btn-outline-primary" title="Scan Barcode 📷" onclick="startScanner()">📷</button>
+      <button onclick="startScanner()" style="border: none; background: none; padding: 0; cursor: pointer;" title="Scan Barcode">
+        <img src="images/barcode-scan.png" alt="Scan Barcode" style="height: 30px; width: 30px;">
+      </button>      
     </div>
     <div class="col-md-6">
       <input id="price" type="number" class="form-control" placeholder="Price (₹)">
