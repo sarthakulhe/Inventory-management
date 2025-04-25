@@ -10,8 +10,7 @@ function openScanner() {
       }
     },
     decoder: {
-      readers: ["ean_reader"]
-    }
+      readers: ["ean_reader", "code_128_reader", "upc_reader", "code_39_reader"]    }
   }, function (err) {
     if (err) {
       console.error(err);
