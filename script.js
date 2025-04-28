@@ -40,7 +40,7 @@ function closeScanner() {
 }
 
 function playBeep() {
-    const beep = new Audio('audio/beep.mp3');
+    const beep = new Audio('audio/bep.mp3');
     beep.play();
 }
 
