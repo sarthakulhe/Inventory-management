@@ -9,6 +9,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
 </head>
 <body>
+<div class="scanner-container" style="position: relative; width: 100%; max-width: 400px; margin: auto; margin-top: 20px;">
+    <video id="video" width="100%" height="auto" style="border: 2px solid #007bff; border-radius: 10px;"></video>
+    <div class="scanner-rectangle" style="position: absolute; top: 30%; left: 10%; width: 80%; height: 40%; border: 2px dashed red; border-radius: 10px;"></div>
+    <button onclick="goBack()" style="position: absolute; top: 10px; right: 10px; background: #dc3545; color: white; border: none; padding: 5px 10px; border-radius: 5px;">Close</button>
+</div>
+
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -44,7 +50,7 @@
       <input id="code" class="form-control me-2" placeholder="Product Code">
       <!-- Barcode scanner button -->
       <button onclick="startScanner()" style="border: none; background: none; padding: 0; cursor: pointer;" title="Scan Barcode">
-        <img src="images/barcode-scan.png" alt="Scan Barcode" style="height: 30px; width: 30px;">
+        <img src="Images/barcode-scan.png" alt="Scan Barcode" style="height: 30px; width: 30px;">
       </button>      
     </div>
     <div class="col-md-6">
@@ -211,5 +217,8 @@
   <button class="btn btn-danger mt-3" onclick="closeScanner()">Close</button>
 </div>
 <script src="app.js"></script>
+
+<script src="https://unpkg.com/@zxing/library@latest"></script>
+<script src="script.js"></script>
 </body>
 </html>
